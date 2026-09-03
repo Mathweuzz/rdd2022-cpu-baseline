@@ -9,9 +9,9 @@ authors = [
   {name = "Mateus Gomes de Araújo", email = "mathweuzz@gmail.com"},
 ]
 dependencies = [
-  "matplotlib==3.10.8",
+  "matplotlib==3.11.1",
   "numpy==2.5.2",
-  "pandas==3.0.0",
+  "pandas==3.0.5",
   "Pillow==12.3.0",
   "seaborn==0.13.2",
 ]
@@ -24,11 +24,11 @@ experiments = [
   "safetensors==0.8.0",
   "torch==2.13.0",
   "torchvision==0.28.0",
-  "transformers==5.10.1",
-  "ultralytics==8.3.203",
+  "transformers==5.16.1",
+  "ultralytics==8.4.136",
 ]
 dev = [
-  "pytest==9.0.3",
+  "pytest==9.1.1",
   "ruff==0.12.12",
 ]
 
