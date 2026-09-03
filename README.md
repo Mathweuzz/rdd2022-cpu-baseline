@@ -56,3 +56,10 @@ are recorded so externally hosted weights and predictions can be verified.
 
 Mateus Gomes de Araújo, Computer Engineering, University of Brasília (UnB).
 Contact: `mathweuzz@gmail.com`.
+
+## License
+
+Original software in this repository is released under the [MIT License](LICENSE).
+The manuscript and original figures remain copyright © 2026 Mateus Gomes de
+Araújo. The vendored IEEEtran files retain their upstream license and copyright
+notices. RDD2022 is not redistributed and remains subject to its source terms.
