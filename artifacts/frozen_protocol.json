@@ -1,0 +1,35 @@
+{
+  "seed": 2026,
+  "model": "YOLO11n",
+  "parameters": 2590620,
+  "input_size": 320,
+  "epochs": 10,
+  "batch_size": 8,
+  "train_images": 2800,
+  "train_images_per_domain": 400,
+  "train_negative_images": 925,
+  "train_instances": {
+    "D00": 2047,
+    "D10": 985,
+    "D20": 626,
+    "D40": 361
+  },
+  "validation_images": 3661,
+  "test_images": 3703,
+  "test_negative_images": 1414,
+  "test_instances": {
+    "D00": 2593,
+    "D10": 1183,
+    "D20": 1061,
+    "D40": 649
+  },
+  "test_images_by_domain": {
+    "China_Drone": 250,
+    "China_MotorBike": 200,
+    "Czech": 283,
+    "India": 725,
+    "Japan": 1045,
+    "Norway": 750,
+    "United_States": 450
+  }
+}

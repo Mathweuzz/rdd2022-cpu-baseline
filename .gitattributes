@@ -1,0 +1,5 @@
+paper/ieee-template/vendor/** linguist-vendored
+*.pdf binary
+*.png binary
+*.ps binary
+*.eps binary

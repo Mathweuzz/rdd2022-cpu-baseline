@@ -1,0 +1,31 @@
+# Large or locally generated assets
+data/
+outputs/
+.deps/
+.venv/
+
+# Local agent metadata
+.agents/
+.codex/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Model and dataset archives
+*.pt
+*.pth
+*.onnx
+*.zip
+*.tar
+*.tar.gz
+
+# LaTeX intermediates (the final PDF remains tracked)
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.log
+paper/*.out
+paper/*.toc
+paper/*.synctex.gz
