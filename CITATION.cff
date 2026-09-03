@@ -5,6 +5,18 @@ type: software
 version: 0.1.0
 license: MIT
 date-released: 2026-09-03
+abstract: >-
+  A reproducible CPU-only YOLO11n baseline for road damage detection on
+  RDD2022, with domain-aware data splitting, COCO evaluation, inference
+  utilities, safe model serialization, and an accompanying IEEE paper.
+keywords:
+  - computer vision
+  - object detection
+  - road damage detection
+  - RDD2022
+  - YOLO11
+  - CPU-only inference
+  - reproducible research
 authors:
   - family-names: "Gomes de Araújo"
     given-names: "Mateus"
