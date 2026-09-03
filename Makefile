@@ -18,7 +18,7 @@ install:
 	$(PYTHON) -m pip install -r requirements.txt
 
 install-dev:
-	$(PYTHON) -m pip install -r requirements-experiments.txt pytest==8.4.2 ruff==0.12.12
+	$(PYTHON) -m pip install -r requirements-experiments.txt pytest==9.0.3 ruff==0.12.12
 
 download:
 	$(PYTHON) download_rdd2022.py --extract

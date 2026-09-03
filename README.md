@@ -43,8 +43,10 @@ python -m pip install --upgrade pip
 python -m pip install -e ".[experiments]"
 ```
 
-The exact versions used for the published run are pinned in `pyproject.toml`
-and `requirements-experiments.txt`.
+Install manifests pin patched compatible versions. The exact historical versions
+used to produce the published metrics remain recorded in
+`paper/RESULTS_PROVENANCE.md`; they are provenance, not a recommendation to
+install packages with known advisories.
 
 ## Reproduce the complete pipeline
 
