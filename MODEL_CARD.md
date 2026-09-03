@@ -11,7 +11,8 @@
 
 ## Intended use
 
-The checkpoint is a transparent low-compute research baseline for reproducing
+The safely serialized tensor checkpoint is a transparent low-compute research
+baseline for reproducing
 the accompanying paper and studying domain-, class-, scale-, and negative-image
 behavior. It may support education and pipeline development.
 
@@ -48,7 +49,8 @@ Full metrics are in `artifacts/test_evaluation.json`.
 
 ## Reproducibility and license
 
-Configuration, metrics, hashes, hardware, and software versions are documented
+The release uses `safetensors` plus a separate architecture YAML rather than a
+pickle-bearing `.pt` file. Configuration, metrics, hashes, hardware, and software versions are documented
 in `paper/RESULTS_PROVENANCE.md`. The training code written for this repository
 is MIT-licensed. Ultralytics software and the released derived checkpoint are
 subject to the upstream AGPL-3.0 licensing terms; commercial users should review

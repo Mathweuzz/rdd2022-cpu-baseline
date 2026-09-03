@@ -8,7 +8,8 @@ import json
 from pathlib import Path
 
 import torch
-from ultralytics import YOLO
+
+from model_io import load_yolo
 
 
 IMAGE_SUFFIXES = {".jpg", ".jpeg", ".png", ".bmp", ".tif", ".tiff", ".webp"}
@@ -17,6 +18,7 @@ IMAGE_SUFFIXES = {".jpg", ".jpeg", ".png", ".bmp", ".tif", ".tiff", ".webp"}
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--model", type=Path, required=True)
+    parser.add_argument("--config", type=Path)
     parser.add_argument("--source", type=Path, required=True)
     parser.add_argument("--output", type=Path, default=Path("outputs/predictions"))
     parser.add_argument("--imgsz", type=int, default=320)
@@ -43,7 +45,7 @@ def main() -> int:
         raise ValueError("conf must be between zero and one")
     args.output.mkdir(parents=True, exist_ok=True)
     torch.set_num_threads(args.threads)
-    model = YOLO(str(args.model))
+    model = load_yolo(args.model, args.config)
     records = []
     for index, source in enumerate(image_paths(args.source)):
         result = model.predict(

@@ -41,6 +41,16 @@ f907a4ddd7ec947c964f465783002d1618b6b50115b4a9eba737b2729df87587  outputs/yolo11
 70019b1805ea3c8f1f7e1ca33421a07635e0f7fa881b6758af68e04a4fc5206a  outputs/yolo11n_joint_cpu_final_seed2026/test_evaluation/predictions.json
 ```
 
+For public distribution, the trusted local `.pt` checkpoint was converted to
+non-executable tensor serialization. Loading the following `safetensors` plus
+architecture YAML produced exactly identical boxes, classes, and scores on the
+positive integration case:
+
+```text
+06f37200468b617e8d0a9a3f5bb674c0a262bea3b4406484ccdf5ff296aeeb7c  yolo11n-rdd2022-cpu-seed2026.safetensors
+8fc0ec2ff369b82bbba1411796d64f3efba74091ccd41d6e7910b5012bb43ddb  yolo11n-rdd2022-cpu-seed2026.yaml
+```
+
 Tracked publication artifacts:
 
 ```text

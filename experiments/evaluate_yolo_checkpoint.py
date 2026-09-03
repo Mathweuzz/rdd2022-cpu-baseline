@@ -16,14 +16,15 @@ import numpy as np
 import torch
 import ultralytics
 from pycocotools.coco import COCO
-from ultralytics import YOLO
 
 from evaluate_cpu_checkpoint import coco_metrics
+from model_io import load_yolo
 
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--model", type=Path, required=True)
+    parser.add_argument("--config", type=Path)
     parser.add_argument("--dataset", type=Path, default=Path("data/rdd2022/clean"))
     parser.add_argument("--split", choices=("val", "test"), default="test")
     parser.add_argument("--output", type=Path, required=True)
@@ -49,7 +50,7 @@ def main() -> int:
     for annotation in coco.dataset["annotations"]:
         annotations_by_image[int(annotation["image_id"])].append(annotation)
 
-    model = YOLO(str(args.model))
+    model = load_yolo(args.model, args.config)
     parameter_count = sum(parameter.numel() for parameter in model.model.parameters())
     started = time.perf_counter()
     predictions: list[dict] = []

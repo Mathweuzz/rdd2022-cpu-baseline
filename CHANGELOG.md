@@ -11,8 +11,8 @@ Changelog, and releases use semantic versioning.
   split pipeline.
 - Deterministic equal-domain CPU protocol and exact YOLO11n training entry point.
 - Low-memory COCO evaluator and single-image/directory inference command.
-- Frozen metrics, training history, configuration, artifact hashes, and model
-  card.
+- Frozen metrics, training history, configuration, artifact hashes, model card,
+  and safe `safetensors` release/export path.
 - Six-page English IEEEtran manuscript and vendored template provenance.
 - Test suite, pinned CI actions, Dependabot configuration, issue templates,
   security policy, contribution guide, citation metadata, and license notices.

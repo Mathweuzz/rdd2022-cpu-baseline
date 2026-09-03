@@ -85,9 +85,10 @@ python experiments/evaluate_yolo_checkpoint.py \
 To try the released checkpoint on one image or a directory:
 
 ```bash
-gh release download v0.1.0 --pattern '*.pt' --dir models
+gh release download v0.1.0 --pattern 'yolo11n-rdd2022-cpu-seed2026.*' --dir models
 python experiments/predict.py \
-  --model models/yolo11n-rdd2022-cpu-seed2026.pt \
+  --model models/yolo11n-rdd2022-cpu-seed2026.safetensors \
+  --config models/yolo11n-rdd2022-cpu-seed2026.yaml \
   --source path/to/image-or-directory
 ```
 

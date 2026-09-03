@@ -33,7 +33,8 @@ the reported Intel Core i5-10500T; timings will differ by host.
 
 `artifacts/frozen_protocol.json`, `artifacts/training_config.yaml`,
 `artifacts/training_history.csv`, and `artifacts/test_evaluation.json` are the
-compact public record. The GitHub release contains the checkpoint and full
+compact public record. The GitHub release contains safely serialized model
+tensors, architecture YAML, and the full
 prediction file; `paper/RESULTS_PROVENANCE.md` contains their SHA-256 hashes.
 
 ## Expected headline results

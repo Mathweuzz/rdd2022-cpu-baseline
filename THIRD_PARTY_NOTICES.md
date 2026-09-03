@@ -3,8 +3,8 @@
 This repository contains or interoperates with third-party material:
 
 - **Ultralytics** is distributed under AGPL-3.0, with separate enterprise
-  licensing offered upstream. The YOLO11n-derived checkpoint in the GitHub
-  release is provided subject to those upstream terms.
+  licensing offered upstream. The YOLO11n-derived tensors and architecture in
+  the GitHub release are provided subject to those upstream terms.
 - **IEEEtran** is preserved under `paper/ieee-template/vendor/` with its original
   copyright and license notices. `paper/ieee-template/SOURCE.md` records source
   provenance and checksums.
