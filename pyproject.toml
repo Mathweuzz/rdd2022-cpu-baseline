@@ -27,7 +27,7 @@ experiments = [
   "ultralytics==8.3.203",
 ]
 dev = [
-  "pytest==8.4.2",
+  "pytest==9.1.1",
   "ruff==0.12.12",
 ]
 
