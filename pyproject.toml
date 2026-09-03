@@ -24,7 +24,7 @@ experiments = [
   "safetensors==0.8.0",
   "torch==2.13.0",
   "torchvision==0.28.0",
-  "transformers==5.10.1",
+  "transformers==5.16.1",
   "ultralytics==8.3.203",
 ]
 dev = [
