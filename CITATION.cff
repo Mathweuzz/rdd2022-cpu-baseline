@@ -3,6 +3,7 @@ message: "If you use this software or protocol, please cite the accompanying pap
 title: "Compute-Constrained Road Damage Detection across Geographic and Sensor Domains"
 type: software
 version: 0.1.0
+doi: "10.5281/zenodo.22285376"
 license: MIT
 date-released: 2026-09-03
 abstract: >-

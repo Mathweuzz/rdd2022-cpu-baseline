@@ -35,6 +35,7 @@ dev = [
 [project.urls]
 Repository = "https://github.com/Mathweuzz/rdd2022-cpu-baseline"
 Paper = "https://github.com/Mathweuzz/rdd2022-cpu-baseline/blob/main/paper/main.pdf"
+Archive = "https://doi.org/10.5281/zenodo.22285376"
 
 [project.scripts]
 rdd2022-download = "download_rdd2022:main"

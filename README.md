@@ -1,6 +1,7 @@
 # Compute-Constrained Road Damage Detection
 
 [![CI](https://github.com/Mathweuzz/rdd2022-cpu-baseline/actions/workflows/ci.yml/badge.svg)](https://github.com/Mathweuzz/rdd2022-cpu-baseline/actions/workflows/ci.yml)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22285375.svg)](https://doi.org/10.5281/zenodo.22285375)
 [![License: MIT](https://img.shields.io/badge/code-MIT-blue.svg)](LICENSE)
 [![Release](https://img.shields.io/github/v/release/Mathweuzz/rdd2022-cpu-baseline)](https://github.com/Mathweuzz/rdd2022-cpu-baseline/releases/latest)
 [![Paper](https://img.shields.io/badge/paper-IEEEtran-b31b1b.svg)](paper/main.pdf)
@@ -20,6 +21,7 @@ claim.
 - [Compiled IEEE paper](paper/main.pdf)
 - [LaTeX source](paper/main.tex)
 - [Results provenance](paper/RESULTS_PROVENANCE.md)
+- [Permanent Zenodo archive](https://doi.org/10.5281/zenodo.22285376)
 
 The paper is written in English using the official IEEEtran conference class.
 Build it with:
@@ -125,6 +127,14 @@ checkout. The full 28.5-minute training run is intentionally not repeated in CI.
 
 Mateus Gomes de Araújo, Computer Engineering, University of Brasília (UnB).
 Contact: `mathweuzz@gmail.com`.
+
+## Citation
+
+The versioned software archive is available under DOI
+[`10.5281/zenodo.22285376`](https://doi.org/10.5281/zenodo.22285376). Use the
+concept DOI [`10.5281/zenodo.22285375`](https://doi.org/10.5281/zenodo.22285375)
+to cite the project independently of a specific release. Machine-readable
+citation metadata is provided in [`CITATION.cff`](CITATION.cff).
 
 ## License
 
