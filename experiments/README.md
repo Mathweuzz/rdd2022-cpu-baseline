@@ -46,6 +46,21 @@ and preserves each domain's negative-image rate. The frozen primary run uses
 10 epochs, 320-pixel inputs, batch size 8, AdamW, and seed 2026 on CPU. All
 paths and realized class/domain counts are recorded in `protocol.json`.
 
+Reproduce the frozen training run after building that protocol:
+
+```bash
+PYTHONPATH=.deps python experiments/train_yolo_cpu.py
+```
+
+The script exposes overrides through `--help`, but its defaults encode the
+published optimizer, augmentation, resolution, batch, epoch, seed, and
+final-checkpoint policy. For low-memory inference on arbitrary images, use:
+
+```bash
+PYTHONPATH=.deps python experiments/predict.py \
+  --model path/to/checkpoint.pt --source path/to/image-or-directory
+```
+
 ## Archived RT-DETR candidate diagnostic
 
 The transformer comparison has a separate runner so the qualified TorchVision

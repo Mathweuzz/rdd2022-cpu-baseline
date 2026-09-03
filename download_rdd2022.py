@@ -192,7 +192,9 @@ def main() -> int:
     if args.extract:
         archives = [path for path in downloaded if path.suffix.lower() == ".zip"]
         for archive in archives:
-            safe_extract(archive, args.output.parent / "extracted")
+            # The top-level archive contains RDD2022/<domain>.zip.  This is the
+            # exact layout consumed by eda_rdd2022.py's public defaults.
+            safe_extract(archive, args.output.parent / "archives")
 
     print("Download e validacao concluidos.")
     return 0

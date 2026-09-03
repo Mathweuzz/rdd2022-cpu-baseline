@@ -1,6 +1,5 @@
 MAIN := main
-FIGURES := ../outputs/eda_rdd2022/overview.png \
-	../outputs/eda_rdd2022/sample_bboxes.png
+FIGURES := figures/overview.png
 
 .PHONY: all clean
 

@@ -9,7 +9,6 @@ import json
 import re
 import shutil
 import zipfile
-from collections import defaultdict
 from pathlib import Path
 
 import numpy as np
