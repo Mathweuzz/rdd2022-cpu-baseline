@@ -22,7 +22,7 @@ experiments = [
   "pycocotools==2.0.11",
   "PyYAML==6.0.3",
   "safetensors==0.8.0",
-  "torch==2.13.0",
+  "torch==2.14.0",
   "torchvision==0.28.0",
   "transformers==5.16.1",
   "ultralytics==8.4.137",
