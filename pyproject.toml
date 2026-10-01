@@ -29,7 +29,7 @@ experiments = [
 ]
 dev = [
   "pytest==9.1.1",
-  "ruff==0.12.12",
+  "ruff==0.16.9",
 ]
 
 [project.urls]
